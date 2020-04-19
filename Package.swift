@@ -1,22 +1,22 @@
 // swift-tools-version:5.0
 import PackageDescription
 let package = Package(
-    name: "Runtime",
+    name: "RuntimeNew",
     products: [
         .library(
-            name: "Runtime",
-            targets: ["Runtime"])
+            name: "RuntimeNew",
+            targets: ["RuntimeNew"])
         ],
     targets: [
         .target(
-            name: "Runtime",
+            name: "RuntimeNew",
             dependencies: ["CRuntime"]),
         .target(
             name: "CRuntime",
             dependencies: []),
         .testTarget(
             name: "RuntimeTests",
-            dependencies: ["Runtime"])
+            dependencies: ["RuntimeNew"])
     ],
     swiftLanguageVersions: [.v5]
 )
