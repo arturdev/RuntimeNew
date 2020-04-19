@@ -10,7 +10,8 @@ let package = Package(
     targets: [
         .target(
             name: "RuntimeNew",
-            dependencies: ["CRuntime"]),
+            dependencies: ["CRuntime"],
+			path: "Sources/Runtime"),
         .target(
             name: "CRuntime",
             dependencies: []),
